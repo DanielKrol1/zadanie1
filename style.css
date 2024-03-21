@@ -1,0 +1,106 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Verdana;
+    font-size: 16px;
+    font-weight: none;
+    color: black;
+}
+a{
+    text-decoration: none;
+}
+body{
+    background-color: gray;
+    
+}
+
+header{
+    justify-content: start;
+    align-self: top;
+    padding: 30px;
+}
+
+header > h1{
+    margin-left: 15px;
+    font-weight: bold;
+    font-size: 2em;
+    align-self: center;
+}
+
+nav{
+    flex-grow: 2;
+    align-self:flex-start;
+    display: flex;
+    justify-content: end;
+    align-items:flex-start;
+}
+
+nav > a {
+    width: 75px;
+}
+
+.flexBox{
+    display: flex;
+}
+
+main{
+    padding: 15px;    
+}
+
+article{
+    margin: 15px;
+    width: 100%;
+    border: black 2px solid;
+    display: flex;
+    flex-direction: column;
+    align-self: center;
+}
+
+
+
+article > h4{
+    height: 50px;
+    width: 50%;
+    font-size: 1.5em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.diffrentFont{
+    
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+.test {
+    color: blueviolet;
+    font-size: 30px;
+    font-style: italic;
+}
+
+.logo{
+    height: 75px;
+}
+
+#piesek{
+    height: 300px;
+
+    margin: 80px;
+}
+
+#piesek2{
+  height: 100px;  
+}
+
+#piesek:hover{
+    rotate: 30deg;
+    transition-duration: 2s;
+    
+}
+
+#piesek:not(:hover){
+    rotate: 0deg;
+    transition-duration: 2s;
+    
+}
