@@ -7,11 +7,16 @@
     font-weight: none;
     color: black;
 }
+html{
+    height: 100%;
+}
 a{
     text-decoration: none;
 }
 body{
-    background-color: gray;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
     
 }
 
@@ -26,6 +31,10 @@ header > h1{
     font-weight: bold;
     font-size: 2em;
     align-self: center;
+}
+#hamburger{
+    height: 50px;
+    display: none;
 }
 
 nav{
@@ -45,7 +54,8 @@ nav > a {
 }
 
 main{
-    padding: 15px;    
+    padding: 15px;  
+    flex: 1 0 auto;  
 }
 
 article{
@@ -66,6 +76,31 @@ article > h4{
     display: flex;
     justify-content: center;
     align-items: center;
+    align-self: flex-end;
+    background-color: lightgray;
+    border-bottom: 2px solid black;
+    border-left: 2px solid black;
+}
+
+article p{
+    text-align: justify;
+    padding: 15px;
+}
+
+footer{
+    height: 100px;
+    background-color: lightgrey;
+    border-top: 2px solid black;
+    margin-top: 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+}
+
+#myName{
+    font-weight: bold;
 }
 
 .diffrentFont{
@@ -104,3 +139,22 @@ article > h4{
     transition-duration: 2s;
     
 }
+
+@media all and (max-width: 900px) {
+        main {
+             flex-wrap: wrap;
+             }
+        header h1{
+            display: none;
+        }
+        header nav{
+            display: none;
+        }
+        #hamburger{
+            display: block;
+
+        }
+        header{
+            justify-content: space-between;
+        }
+    }
