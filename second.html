@@ -50,28 +50,52 @@
             <div class="con_top">
                 <h3>Kontakt</h3>
             </div>
-            <div class="basic_info">
-                <label>Imie: </label>
-                <input maxlength="15" type="email">
-                <label>Nazwisko: </label>
-                <input maxlength="15" type="tel">
-            </div>
             <form>
                 <div class="basic_info">
-                    <label for="email">Email: </label>
-                    <input type="email" name="email" required>
-                    <label for="age">Wiek: </label>
-                    <input min="10" max="105" type="number" name="age" required>
+                    <div>
+                        <label>Imie: </label>
+                        <input maxlength="15" type="text">
+                    </div>
+                    <div>
+                        <label>Nazwisko: </label>
+                        <input maxlength="15" type="text">
+                    </div>                   
+                </div>
+            
+                <div class="info">
+                    <div>
+                        <label for="email">Email: </label>
+                        <input type="email" name="email" required>
+                    </div>
+                    <div>
+                        <label for="age">Wiek: </label>
+                        <input min="10" max="105" type="number" name="age" required>
+                    </div>  
                 </div>       
-                <textarea cols="50" required></textarea> 
+                <textarea placeholder="Napisz wiadomość" cols="50" required></textarea> 
                 <div class=" send">
+                    <div>
+                        <input type="checkbox" name="warning" required>
                     <label for="warning">Zapoznałem się z warunkami</label>
-                    <input type="checkbox" minlength="10" name="warning" required>
-                    <input type="submit" required>
+                    </div>  
+                    <input id="sending" type="submit" required>
                 </div>
             </form>  
             
         </div>
+
+        <div id="lista">
+            <ul>
+                <li>wiersz 1</li>
+                <li>wiersz 2<ul>
+                    <li>2.1</li>
+                    <li>2.2</li>
+                </ul></li>  
+                <li>wiersz 3</li>
+            </ul>
+        </div>
+
+        
     </main>
     <footer>
         <p>Wykonanie</p>
