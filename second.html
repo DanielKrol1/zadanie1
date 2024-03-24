@@ -18,18 +18,60 @@
         </nav>
     </header>
     <main class="flexBox">
-        <article>
-            <h4>Nagłowek 1</h4>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas orci dui, facilisis eget ligula vitae, fringilla blandit erat. Etiam sit amet augue porttitor, fermentum lectus eget, faucibus nulla. Nulla facilisi. Proin at metus quis tortor cursus consectetur ut at ligula. Curabitur felis nunc, auctor eget vehicula quis, varius sed lacus. Phasellus ac turpis consequat, sagittis erat in, dictum est. Aenean euismod tempus tellus, at pharetra nunc lobortis non. Morbi et leo pulvinar, tincidunt tortor auctor, porta nulla.</p>
-        </article>
-        <article>
-            <h4>Nagłowek 2</h4>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas orci dui, facilisis eget ligula vitae, fringilla blandit erat. Etiam sit amet augue porttitor, fermentum lectus eget, faucibus nulla. Nulla facilisi. Proin at metus quis tortor cursus consectetur ut at ligula. Curabitur felis nunc, auctor eget vehicula quis, varius sed lacus. Phasellus ac turpis consequat, sagittis erat in, dictum est. Aenean euismod tempus tellus, at pharetra nunc lobortis non. Morbi et leo pulvinar, tincidunt tortor auctor, porta nulla.</p>
-        </article>
-        <article>
-            <h4>Nagłowek 3</h4>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas orci dui, facilisis eget ligula vitae, fringilla blandit erat. Etiam sit amet augue porttitor, fermentum lectus eget, faucibus nulla. Nulla facilisi. Proin at metus quis tortor cursus consectetur ut at ligula. Curabitur felis nunc, auctor eget vehicula quis, varius sed lacus. Phasellus ac turpis consequat, sagittis erat in, dictum est. Aenean euismod tempus tellus, at pharetra nunc lobortis non. Morbi et leo pulvinar, tincidunt tortor auctor, porta nulla.</p>
-        </article>
+        <div class="flexBox">
+            <article>
+                <h4>Nagłowek 1</h4>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas orci dui, facilisis eget ligula vitae, fringilla blandit erat. Etiam sit amet augue porttitor, fermentum lectus eget, faucibus nulla. Nulla facilisi. Proin at metus quis tortor cursus consectetur ut at ligula. Curabitur felis nunc, auctor eget vehicula quis, varius sed lacus. Phasellus ac turpis consequat, sagittis erat in, dictum est. Aenean euismod tempus tellus, at pharetra nunc lobortis non. Morbi et leo pulvinar, tincidunt tortor auctor, porta nulla.</p>
+            </article>
+            <article>
+                <h4>Nagłowek 2</h4>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas orci dui, facilisis eget ligula vitae, fringilla blandit erat. Etiam sit amet augue porttitor, fermentum lectus eget, faucibus nulla. Nulla facilisi. Proin at metus quis tortor cursus consectetur ut at ligula. Curabitur felis nunc, auctor eget vehicula quis, varius sed lacus. Phasellus ac turpis consequat, sagittis erat in, dictum est. Aenean euismod tempus tellus, at pharetra nunc lobortis non. Morbi et leo pulvinar, tincidunt tortor auctor, porta nulla.</p>
+            </article>
+            <article>
+                <h4>Nagłowek 3</h4>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas orci dui, facilisis eget ligula vitae, fringilla blandit erat. Etiam sit amet augue porttitor, fermentum lectus eget, faucibus nulla. Nulla facilisi. Proin at metus quis tortor cursus consectetur ut at ligula. Curabitur felis nunc, auctor eget vehicula quis, varius sed lacus. Phasellus ac turpis consequat, sagittis erat in, dictum est. Aenean euismod tempus tellus, at pharetra nunc lobortis non. Morbi et leo pulvinar, tincidunt tortor auctor, porta nulla.</p>
+            </article>
+            
+        </div>
+        <img class="obraz" src="img/image.jpg" alt="Obraz">
+        <div class="painting">
+            <div class="oval">
+                <span id="left"></span>
+            </div>
+            <div class="oval">
+                <span id="middle"></span>
+            </div>
+            <div class="oval">
+                <span id="right"></span>
+            </div>
+        </div>
+        <video src="img/pexels-lukas-rodriguez-20184664 (Original).mp4" controls></video>
+        <div class="contact">
+            <div class="con_top">
+                <h3>Kontakt</h3>
+            </div>
+            <div class="basic_info">
+                <label>Imie: </label>
+                <input maxlength="15" type="email">
+                <label>Nazwisko: </label>
+                <input maxlength="15" type="tel">
+            </div>
+            <form>
+                <div class="basic_info">
+                    <label for="email">Email: </label>
+                    <input type="email" name="email" required>
+                    <label for="age">Wiek: </label>
+                    <input min="10" max="105" type="number" name="age" required>
+                </div>       
+                <textarea cols="50" required></textarea> 
+                <div class=" send">
+                    <label for="warning">Zapoznałem się z warunkami</label>
+                    <input type="checkbox" minlength="10" name="warning" required>
+                    <input type="submit" required>
+                </div>
+            </form>  
+            
+        </div>
     </main>
     <footer>
         <p>Wykonanie</p>

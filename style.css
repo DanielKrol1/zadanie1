@@ -24,6 +24,7 @@ header{
     justify-content: start;
     align-self: top;
     padding: 30px;
+    border-bottom: yellow 3px solid;
 }
 
 header > h1{
@@ -31,6 +32,7 @@ header > h1{
     font-weight: bold;
     font-size: 2em;
     align-self: center;
+
 }
 #hamburger{
     height: 50px;
@@ -47,6 +49,19 @@ nav{
 
 nav > a {
     width: 75px;
+    border: 2px solid black;
+    color: white;
+    background-color: black;
+    border-radius: 30%;
+    display: flex;
+    justify-content: center;
+}
+
+nav > a:hover{
+    background-color: white;
+    color: black;
+    border: 3px solid yellow;
+    transition: 1s;
 }
 
 .flexBox{
@@ -56,6 +71,9 @@ nav > a {
 main{
     padding: 15px;  
     flex: 1 0 auto; 
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
 article{
@@ -87,6 +105,81 @@ article p{
     text-align: justify;
     padding: 15px;
 }
+
+.obraz{
+    width: 20em;
+}
+
+.obraz:hover{
+    width: 25em;
+    transition: 2s;
+}
+
+.obraz:not(:hover){
+    width: 20em;
+    transition: 2s;
+}
+
+.painting{
+    background-color: blue;
+    height: 100px;
+    width: 50vw;
+    margin-top: 10px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.painting:hover{
+    justify-content: center;
+    transition: 2s;
+}
+
+.painting:not(:hover){
+    justify-content: space-around;
+}
+
+.oval{
+    height: 85px;
+    width: 85px;
+    background-color: yellow;
+    border-radius: 50%;
+    position: relative;
+}
+
+#left{
+    height: 3px;
+    width: 99%;
+    background-color: black;
+    position: absolute;
+    left: 5px;
+    top: 50px;
+    rotate: -25deg;
+}
+
+#middle{
+    height: 3px;
+    width: 100%;
+    background-color: black;
+    position: absolute;
+    top: 32px;
+}
+
+#right{
+    height: 3px;
+    width: 99%;
+    background-color: black;
+    position: absolute;
+    left: -4px;
+    top: 50px;
+    rotate: 25deg;
+}
+
+video{
+    width: 95vw;
+    margin-top: 5px;
+}
+
 
 footer{
     height: 100px;
@@ -144,7 +237,7 @@ footer{
 }
 
 @media all and (max-width: 900px) {
-        main {
+        main > div{
              flex-wrap: wrap;
              }
         header h1{
