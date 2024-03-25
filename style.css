@@ -99,6 +99,7 @@ article > h4{
     background-color: lightgray;
     border-bottom: 2px solid black;
     border-left: 2px solid black;
+    color: black;
 }
 
 article p{
@@ -225,9 +226,6 @@ video{
 }
 
 
-.basic_info{
-    
-}
 
 .contact form > textarea{
     margin: 10px 0px;
